@@ -13,4 +13,4 @@
 ## Solution:
 ### To address the challenge of increasing employee turnover rates, the company will implement a comprehensive Attrition Trends Dashboard. This dashboard will integrate data from various sources such as HR records, performance evaluations, exit interviews, and employee surveys to provide a holistic view of attrition patterns within the organization.
 
-![Alt text](https://www.istockphoto.com/photo/missing-puzzle-piece-problem-and-solution-white-gm531861190-93989173)
+![Alt text](https://media.istockphoto.com/id/531861190/photo/missing-puzzle-piece-problem-and-solution-white.jpg?s=612x612&w=0&k=20&c=hU0KmkOHgvVtF5H0ILcv18kDpV7_T0CIeGudJAL_MEg=)
