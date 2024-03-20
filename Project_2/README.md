@@ -71,7 +71,7 @@ COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount
 FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
 
-## 1. Basic Information:
+## Basic Information:
 ### How many categories are there in the dataset?
 
 SELECT COUNT(categoryID) as Number_Of_Categories FROM category;
