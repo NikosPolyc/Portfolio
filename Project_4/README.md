@@ -19,5 +19,5 @@
 
 ![My Image](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4/Exec_Dashboard.png)
 
-
+![alt text](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4/Exec_Dashboard.png?raw=true)
 
