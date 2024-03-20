@@ -33,6 +33,7 @@
 
 ## Project
 ### Project_1
+### [Data Analysis on Greek used car market.](https://pages.github.com/NikosPolyc/Portfolio/tree/main/Project_1/Portfolio_Project_1_LEASING_COMPANY_ANALYSIS.ipynb)
 ### Project_2
 ### Project_3
 ### Project_4
