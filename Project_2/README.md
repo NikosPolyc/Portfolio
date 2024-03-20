@@ -291,7 +291,7 @@ LIMIT 20;
 | Phoenix        | 63    |
 | Long Beach     | 61    |
 
-## 2. Order Analysis:
+## 3. Order Analysis:
 
 ### Which Segment order more products and is more profitable?
 
