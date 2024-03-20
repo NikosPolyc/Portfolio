@@ -16,9 +16,12 @@
 ![Alt text](https://media.istockphoto.com/id/531861190/photo/missing-puzzle-piece-problem-and-solution-white.jpg?s=612x612&w=0&k=20&c=hU0KmkOHgvVtF5H0ILcv18kDpV7_T0CIeGudJAL_MEg=)
 
 ## Dashboard:
-![alt text](https://raw.githubusercontent.com/NikosPolyc/Portfolio/main/Project_4/Exec_Dashboard.png)
-![alt text](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4/Exec_Dashboard.png)
-
+<img
+src=“https://raw.githubusercontent.com/NikosPolyc/Portfolio/main/Project_4/Exec_Dashboard.png”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
 
 
 
