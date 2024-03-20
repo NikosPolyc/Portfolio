@@ -41,7 +41,8 @@ CREATE TABLE Orders (
     Profit NUMERIC,
     ProductID INTEGER REFERENCES Products(ProductID)
 );
-__
+
+---
 ## Schema
 ![Alt Text](2.photo_SCHEMA_STORE_DB.png)
 
@@ -71,8 +72,10 @@ DELIMITER ';' CSV HEADER;
 COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount, Profit) 
 FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
-__
+
+---
 # Basic Information:
+
 ### How many categories are there in the dataset?
 
 SELECT COUNT(categoryID) as Number_Of_Categories FROM category;
