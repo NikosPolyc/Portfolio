@@ -551,7 +551,8 @@ ORDER BY Frequency DESC;
 | Central  | Art          | 176       |
 | East     | Chairs       | 168       |
 
-
+___
+___
 # REFERENCES:
 ## DATASET: Super Store
 ### https://www.kaggle.com/datasets/itssuru/super-store
