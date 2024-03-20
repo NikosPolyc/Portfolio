@@ -1,6 +1,6 @@
 # SQL Analysis
 
-# Create the tables to work.
+# Create Tables
 -- Create Category Table
 CREATE TABLE Category (
     CategoryID SERIAL PRIMARY KEY,
@@ -100,7 +100,7 @@ SELECT COUNT(customerID) as Number_Of_Customers FROM customers;
 | number_of_customers | 9994 |
 | ------------------- | ---- |
 
-# Tables analysis.
+# Tables analysis
 ## 1. Product Analysis:
 
 ### Which category has the highest number of products?
