@@ -43,8 +43,11 @@ CREATE TABLE Orders (
 );
 
 ---
+
 ## Schema
 ![Alt Text](2.photo_SCHEMA_STORE_DB.png)
+
+---
 
 # Import the Data
 
@@ -74,6 +77,7 @@ FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
 
 ---
+
 # Basic Information:
 
 ### How many categories are there in the dataset?
