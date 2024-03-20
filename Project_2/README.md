@@ -550,3 +550,8 @@ ORDER BY Frequency DESC;
 | Central  | Accessories  | 183       |
 | Central  | Art          | 176       |
 | East     | Chairs       | 168       |
+
+
+# REFERENCES:
+## DATASET: Super Store
+### https://www.kaggle.com/datasets/itssuru/super-store
