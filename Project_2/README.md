@@ -1,6 +1,6 @@
 # SQL
 
-## Create the tables to work.
+# Create the tables to work.
 -- Create Category Table
 CREATE TABLE Category (
     CategoryID SERIAL PRIMARY KEY,
@@ -44,7 +44,7 @@ CREATE TABLE Orders (
 
 ![Alt Text](2.photo_SCHEMA_STORE_DB.png)
 
-## Import the Data
+# Import the Data
 
 -- Import data into Category table
 COPY Category (CategoryID,CategoryName)
@@ -71,7 +71,7 @@ COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount
 FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
 
-## Basic Information:
+# Basic Information:
 ### How many categories are there in the dataset?
 
 SELECT COUNT(categoryID) as Number_Of_Categories FROM category;
