@@ -41,37 +41,37 @@ CREATE TABLE Orders (
     Profit NUMERIC,
     ProductID INTEGER REFERENCES Products(ProductID)
 );
-
+__
 ## Schema
 ![Alt Text](2.photo_SCHEMA_STORE_DB.png)
 
 # Import the Data
 
--- Import data into Category table
+### Import data into Category table
 COPY Category (CategoryID,CategoryName)
 FROM '/Portfolio/main/Project_2/Category.csv'
 DELIMITER ';' CSV HEADER;
 
--- Import data into Subcategory table
+### Import data into Subcategory table
 COPY Subcategory (SubCategoryID,SubCategoryName)
 FROM '/Portfolio/main/Project_2/Subcategory.csv'
 DELIMITER ';' CSV HEADER;
 
--- Import data into Products table
+### Import data into Products table
 COPY Products (ProductID,CategoryID, SubCategoryID)
 FROM '/Portfolio/main/Project_2/Product.csv'
 DELIMITER ';' CSV HEADER;
 
--- Import data into Customers table
+### Import data into Customers table
 COPY Customers (CustomerID,Country, City, State, PostalCode, Region)
 FROM '/Portfolio/main/Project_2/Customer.csv'
 DELIMITER ';' CSV HEADER;
 
--- Import data into Orders table
+### Import data into Orders table
 COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount, Profit) 
 FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
-
+__
 # Basic Information:
 ### How many categories are there in the dataset?
 
