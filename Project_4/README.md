@@ -17,7 +17,7 @@
 
 ## Dashboard:
 
-![My Image](https://raw.githubusercontent.com/NikosPolyc/Portfolio/main/Project_4/Exec_Dashboard.png)
+![My Image](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4/Exec_Dashboard.png)
 
 
 
