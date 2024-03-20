@@ -1,3 +1,261 @@
-# Test
-# This is a test
-## Grant Test
+# SQL
+
+## Create the tables to work.
+-- Create Category Table
+CREATE TABLE Category (
+    CategoryID SERIAL PRIMARY KEY,
+    CategoryName VARCHAR(50)
+);
+
+-- Create Subcategory Table
+CREATE TABLE Subcategory (
+    SubCategoryID SERIAL PRIMARY KEY,
+    SubCategoryName VARCHAR(50)
+);
+
+-- Create Products Table
+CREATE TABLE Products (
+    ProductID SERIAL PRIMARY KEY,
+    CategoryID INTEGER REFERENCES Category(CategoryID),
+    SubCategoryID INTEGER REFERENCES Subcategory(SubCategoryID)
+);
+
+-- Create Customers Table
+CREATE TABLE Customers (
+    CustomerID SERIAL PRIMARY KEY,
+    Country VARCHAR(50),
+    City VARCHAR(50),
+    State VARCHAR(50),
+    PostalCode VARCHAR(10),
+    Region VARCHAR(50)
+);
+
+-- Create Orders Table
+CREATE TABLE Orders (
+    CustomerID SERIAL PRIMARY KEY,
+    ShipMode VARCHAR(50),
+    Segment VARCHAR(50),
+    Sales NUMERIC,
+    Quantity INTEGER,
+    Discount NUMERIC,
+    Profit NUMERIC,
+    ProductID INTEGER REFERENCES Products(ProductID)
+);
+
+![Alt Text](2.photo_SCHEMA_STORE_DB.png)
+
+## Import the Data
+
+-- Import data into Category table
+COPY Category (CategoryID,CategoryName)
+FROM '/Portfolio/main/Project_2/Category.csv'
+DELIMITER ';' CSV HEADER;
+
+-- Import data into Subcategory table
+COPY Subcategory (SubCategoryID,SubCategoryName)
+FROM '/Portfolio/main/Project_2/Subcategory.csv'
+DELIMITER ';' CSV HEADER;
+
+-- Import data into Products table
+COPY Products (ProductID,CategoryID, SubCategoryID)
+FROM '/Portfolio/main/Project_2/Product.csv'
+DELIMITER ';' CSV HEADER;
+
+-- Import data into Customers table
+COPY Customers (CustomerID,Country, City, State, PostalCode, Region)
+FROM '/Portfolio/main/Project_2/Customer.csv'
+DELIMITER ';' CSV HEADER;
+
+-- Import data into Orders table
+COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount, Profit) 
+FROM '/Portfolio/main/Project_2/Order.csv'
+DELIMITER ';' CSV HEADER;
+
+## 1. Basic Information:
+### How many categories are there in the dataset?
+
+SELECT COUNT(categoryID) as Number_Of_Categories FROM category;
+
+### How many subcategories are there in the dataset?
+
+SELECT COUNT(subcategoryID) AS Number_Of_Subcategories FROM subcategory;
+
+### What are the unique countries represented in the Customers table?
+
+SELECT COUNT(DISTINCT country) as Number_Of_Countries FROM customers;
+
+### What is the total number of customers in the dataset?
+
+SELECT COUNT(customerID) as Number_Of_Customers FROM customers;
+
+# Tables analysis.
+## 1. Product Analysis:
+
+### Which category has the highest number of products?
+
+SELECT category.categoryName, COUNT(products.productID) AS NumberOfProducts
+FROM products
+JOIN category ON category.categoryID = products.categoryID
+GROUP BY category.categoryName
+ORDER BY NumberOfProducts DESC
+LIMIT 1;
+
+### What is the average quantity of products ordered per order?
+
+SELECT ROUND(AVG(quantity),2) AS Average_Quantity_per_Order FROM orders
+
+### Which products has the highest sales value?
+
+SELECT subcategory.subcategoryname, SUM(orders.sales) AS Total_Sales 
+FROM orders
+JOIN products ON orders.productID = products.productID
+JOIN subcategory ON products.subcategoryID= subcategory.subcategoryID
+GROUP BY subcategory.subcategoryname
+ORDER BY Total_Sales DESC;
+
+### Which products has the highest profit value?
+SELECT subcategory.subcategoryname, SUM(orders.profit) AS Total_Profit 
+FROM orders
+JOIN products ON orders.productID = products.productID
+JOIN subcategory ON products.subcategoryID= subcategory.subcategoryID
+GROUP BY subcategory.subcategoryname
+ORDER BY Total_Profit DESC;
+
+## 2. Customer Analysis:
+
+### How many customers are located in each region,state and city?
+
+#### Region
+SELECT region, COUNT(customerID) FROM customers
+GROUP BY region;
+#### State
+SELECT state, COUNT(customerID) FROM customers
+GROUP BY state;
+#### City
+SELECT city, COUNT(customerID) FROM customers
+GROUP BY city;
+
+## 2. Order Analysis:
+
+### Which Segment order more products and is more profitable?
+
+SELECT segment,SUM(quantity) as Quantity_Orders FROM orders
+GROUP BY segment;
+
+### Which Segment is more profitable?
+
+SELECT segment, SUM(profit) AS Total_Profit_per_Segment from orders
+GROUP BY segment;
+
+### What are the shipping modes used for each segment of orders, and how many orders were shipped using each mode?
+
+SELECT segment,shipmode,COUNT(shipmode) as Num_Of_Shipping FROM orders
+GROUP BY segment,shipmode
+ORDER BY Num_Of_Shipping DESC;
+
+### What is the total profit generated for each shipping mode within each segment of orders,and how does it vary across different modes and segments?
+
+SELECT segment,shipmode,SUM(profit) as Sum_of_Profits FROM orders
+GROUP BY segment,shipmode
+ORDER BY Sum_of_Profits DESC;
+
+### Which segment pursue more discounts?
+
+SELECT segment,COUNT(discount) as Discounts FROM orders
+GROUP BY segment
+ORDER BY COUNT(discount) DESC
+LIMIT 1
+
+
+### For each segment, which category generates the highest total sales?
+
+SELECT segment, category.CategoryName, SUM(orders.Sales) AS Total_Sales
+FROM orders
+JOIN products ON orders.ProductID = products.ProductID
+JOIN category ON products.CategoryID = category.CategoryID
+GROUP BY segment, category.CategoryName
+ORDER BY segment, Total_Sales DESC;
+
+# Advanced Analysis:
+
+### What is the correlation between sales, profit, and quantity for each segment of orders?
+
+SELECT segment,
+	CORR(Sales, Profit) AS Sales_Profit_Correlation,
+    CORR(Sales, Quantity) AS Sales_Quantity_Correlation,
+    CORR(Profit, Quantity) AS Profit_Quantity_Correlation
+FROM orders
+GROUP BY segment;
+
+###Consumer Segment:
+#### Sales-Profit Correlation (-0.0637): There is a very weak negative correlation between sales and profit for the Consumer segment. This suggests that as sales increase, profit tends to decrease slightly, but the correlation is not strong.
+#### Sales-Quantity Correlation (0.0992): There is a weak positive correlation between sales and quantity for the Consumer segment. This means that as sales increase, the quantity of products sold also tends to increase slightly.
+#### Profit-Quantity Correlation (0.0435): There is a very weak positive correlation between profit and quantity for the Consumer segment. This suggests that as the quantity of products sold increases, profit tends to increase slightly, but the correlation is not strong.
+### Corporate Segment:
+#### Sales-Profit Correlation (-0.0516): There is a very weak negative correlation between sales and profit for the Corporate segment. Similar to the Consumer segment, this suggests that as sales increase, profit tends to decrease slightly, but the correlation is not strong.
+#### Sales-Quantity Correlation (0.0925): There is a weak positive correlation between sales and quantity for the Corporate segment. As sales increase, the quantity of products sold also tends to increase slightly.
+#### Profit-Quantity Correlation (0.0815): There is a weak positive correlation between profit and quantity for the Corporate segment. As the quantity of products sold increases, profit tends to increase slightly.
+
+### Home Office Segment:
+#### Sales-Profit Correlation (0.4270): There is a moderate positive correlation between sales and profit for the Home Office segment. This suggests that as sales increase, profit tends to increase significantly.
+#### Sales-Quantity Correlation (0.0827): There is a weak positive correlation between sales and quantity for the Home Office segment. As sales increase, the quantity of products sold also tends to increase slightly.
+#### Profit-Quantity Correlation (0.1002): There is a weak positive correlation between profit and quantity for the Home Office segment. As the quantity of products sold increases, profit tends to increase slightly.
+
+
+### Most sold types of products based on cities.
+
+SELECT 
+    customers.city,
+    subcategory.subcategoryname as Product_Type,
+    COUNT(*) AS Frequency
+FROM 
+    customers
+JOIN 
+    orders ON customers.CustomerID = orders.CustomerID
+JOIN 
+    products ON orders.ProductID = products.ProductID
+JOIN 
+    subcategory ON products.SubCategoryID = subcategory.SubCategoryID
+GROUP BY 
+    customers.city,
+    subcategory.subcategoryname
+ORDER BY Frequency DESC;
+
+###  Most sold types of products based on state.
+
+SELECT 
+    customers.state,
+    subcategory.subcategoryname as Product_Type,
+    COUNT(*) AS Frequency
+FROM 
+    customers
+JOIN 
+    orders ON customers.CustomerID = orders.CustomerID
+JOIN 
+    products ON orders.ProductID = products.ProductID
+JOIN 
+    subcategory ON products.SubCategoryID = subcategory.SubCategoryID
+GROUP BY 
+    customers.state,
+    subcategory.subcategoryname
+ORDER BY Frequency DESC;
+
+### Most sold types of products based on region.
+
+SELECT 
+    customers.region,
+    subcategory.subcategoryname as Product_Type,
+    COUNT(*) AS Frequency
+FROM 
+    customers
+JOIN 
+    orders ON customers.CustomerID = orders.CustomerID
+JOIN 
+    products ON orders.ProductID = products.ProductID
+JOIN 
+    subcategory ON products.SubCategoryID = subcategory.SubCategoryID
+GROUP BY 
+    customers.region,
+    subcategory.subcategoryname
+ORDER BY Frequency DESC;
+
