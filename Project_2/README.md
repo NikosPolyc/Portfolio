@@ -1,4 +1,4 @@
-# SQL
+# SQL Analysis
 
 # Create the tables to work.
 -- Create Category Table
