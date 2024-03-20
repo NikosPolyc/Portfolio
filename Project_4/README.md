@@ -3,7 +3,7 @@
 ## Business Problem:
 ### The HR department of a company is experiencing a concerning increase in employee turnover rates. This high attrition not only impacts team morale but also incurs significant costs associated with recruitment, onboarding, and training of new employees. HR executives urgently need insights into the underlying factors driving this trend and actionable strategies to mitigate attrition risks. They require a robust tracking system that provides real-time visibility into attrition trends across departments, job roles, and demographics to proactively identify at-risk employees and implement targeted retention initiatives.
 
-![Alt text](https://www.istockphoto.com/photo/faq-ask-quiestion-online-what-where-when-how-and-why-search-information-gm1061345628-283722195)
+![Alt text](https://media.istockphoto.com/id/1348235111/photo/innovation-and-new-ideas-lightbulb-concept-with-question-mark.jpg?s=612x612&w=0&k=20&c=i0g5Kf7jJidMSLSgorxhyfWzJwBOpn40v0TBOLLPSUc=)
 
 ## What Is Attrition in Business?
 ### The term attrition refers to a gradual but deliberate reduction in staff numbers that occurs as employees leave a company and are not replaced. It is commonly used to describe the downsizing of a firm's employee pool by human resources (HR) professionals. In this case, downsizing is voluntary, where employees either resign or retire and aren't replaced by the company.
