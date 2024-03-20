@@ -32,8 +32,7 @@
 - [License](#license)
 
 ## About
-### Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects.
-### Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
+#### Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects. Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
 
 ## Project
 ### Project_1 !make it page --->SETTINGS--->PAGES
