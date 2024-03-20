@@ -10,11 +10,11 @@
 
 - [About](#about)
 - [Projects](#usage)
-  - [Project 1](#Project 1)
-  - [Project 2](#Project 2)
-  - [Project 3](#Project 3)
-  - [Project 4](#Project 4)
-  - [Project 5](#Project 5)
+  - [Project 1](#Project_1)
+  - [Project 2](#Project_2)
+  - [Project 3](#Project_3)
+  - [Project 4](#Project_4)
+  - [Project 5](#Project_5)
 - [Development](#development)
   - [Pre-Requisites](#pre-requisites)
   - [Developmen Environment](#development-environment)
@@ -31,8 +31,13 @@
 - [Credit/Acknowledgment](#creditacknowledgment)
 - [License](#license)
 
-## About
-Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects. Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
+## Project
+### Project_1
+### Project_2
+### Project_3
+### Project_4
+### Project_5
+
 
 ## Usage
 Write about how to use this project.
