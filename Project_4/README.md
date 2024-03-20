@@ -22,7 +22,7 @@
 ![alt text](Exec_Dashboard.png)
 ### - Slicers: Gauge Job Satisfaction, Involvement, Environmental Satisfaction, and Work-Life Balance (RED).
 ### - Filters: Segment data by Department (GREEN).
-### - Department Button: Instantly filter data based on selected departments' fields of study(BLUE).
+### - Department Button: Instantly trasfers user to a table based on selected departments' fields of study(BLUE).
 ![alt text](Exec_Dashboard_exp.png)
 
 
