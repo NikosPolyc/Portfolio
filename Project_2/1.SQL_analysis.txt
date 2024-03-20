@@ -46,27 +46,27 @@ CREATE TABLE Orders (
 
 -- Import data into Category table
 COPY Category (CategoryID,CategoryName)
-FROM 'C:\Users\nikpol\Desktop\portfolio\sql\Category.csv'
+FROM '/Portfolio/main/Project_2/Category.csv'
 DELIMITER ';' CSV HEADER;
 
 -- Import data into Subcategory table
 COPY Subcategory (SubCategoryID,SubCategoryName)
-FROM 'C:\Users\nikpol\Desktop\portfolio\sql\Subcategory.csv'
+FROM '/Portfolio/main/Project_2/Subcategory.csv'
 DELIMITER ';' CSV HEADER;
 
 -- Import data into Products table
 COPY Products (ProductID,CategoryID, SubCategoryID)
-FROM 'C:\Users\nikpol\Desktop\portfolio\sql\Product.csv'
+FROM '/Portfolio/main/Project_2/Product.csv'
 DELIMITER ';' CSV HEADER;
 
 -- Import data into Customers table
 COPY Customers (CustomerID,Country, City, State, PostalCode, Region)
-FROM 'C:\Users\nikpol\Desktop\portfolio\sql\Customer.csv'
+FROM '/Portfolio/main/Project_2/Customer.csv'
 DELIMITER ';' CSV HEADER;
 
 -- Import data into Orders table
 COPY Orders (CustomerID, ProductID, ShipMode, Segment, Sales, Quantity, Discount, Profit) 
-FROM 'C:\Users\nikpol\Desktop\portfolio\sql\Order.csv'
+FROM '/Portfolio/main/Project_2/Order.csv'
 DELIMITER ';' CSV HEADER;
 
 
