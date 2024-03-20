@@ -17,6 +17,8 @@
 
 ## Dashboard:
 
+![Alt text](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4/Exec_Dashboard.png)
+
 
 
 
