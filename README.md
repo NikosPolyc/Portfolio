@@ -29,7 +29,7 @@
 - [License](#license)
 
 ## About
-Add a detailed introduction about the project here, everything you want the reader to know.
+Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects. Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
 
 ## Usage
 Write about how to use this project.
