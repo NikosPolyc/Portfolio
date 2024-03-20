@@ -76,6 +76,9 @@ DELIMITER ';' CSV HEADER;
 
 SELECT COUNT(categoryID) as Number_Of_Categories FROM category;
 
+| number_of_categories | 3 |
+| -------------------- | - |
+
 ### How many subcategories are there in the dataset?
 
 SELECT COUNT(subcategoryID) AS Number_Of_Subcategories FROM subcategory;
