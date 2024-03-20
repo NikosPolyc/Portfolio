@@ -1,26 +1,26 @@
 # SQL Data Analysis
 ![Alt text](https://img.freepik.com/free-vector/abstract-technology-sql-illustration_23-2149229481.jpg?size=626&ext=jpg&ga=GA1.1.1156105623.1709289244&semt=ais)
 # Create Tables
--- Create Category Table
+### Create Category Table
 CREATE TABLE Category (
     CategoryID SERIAL PRIMARY KEY,
     CategoryName VARCHAR(50)
 );
 
--- Create Subcategory Table
+### Create Subcategory Table
 CREATE TABLE Subcategory (
     SubCategoryID SERIAL PRIMARY KEY,
     SubCategoryName VARCHAR(50)
 );
 
--- Create Products Table
+### Create Products Table
 CREATE TABLE Products (
     ProductID SERIAL PRIMARY KEY,
     CategoryID INTEGER REFERENCES Category(CategoryID),
     SubCategoryID INTEGER REFERENCES Subcategory(SubCategoryID)
 );
 
--- Create Customers Table
+### Create Customers Table
 CREATE TABLE Customers (
     CustomerID SERIAL PRIMARY KEY,
     Country VARCHAR(50),
@@ -30,7 +30,7 @@ CREATE TABLE Customers (
     Region VARCHAR(50)
 );
 
--- Create Orders Table
+### Create Orders Table
 CREATE TABLE Orders (
     CustomerID SERIAL PRIMARY KEY,
     ShipMode VARCHAR(50),
