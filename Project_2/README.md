@@ -42,6 +42,7 @@ CREATE TABLE Orders (
     ProductID INTEGER REFERENCES Products(ProductID)
 );
 
+## Schema
 ![Alt Text](2.photo_SCHEMA_STORE_DB.png)
 
 # Import the Data
