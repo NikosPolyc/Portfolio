@@ -1,5 +1,5 @@
 # SQL Analysis
-
+![Alt text](https://img.freepik.com/free-vector/abstract-technology-sql-illustration_23-2149229481.jpg?size=626&ext=jpg&ga=GA1.1.1156105623.1709289244&semt=ais)
 # Create Tables
 -- Create Category Table
 CREATE TABLE Category (
