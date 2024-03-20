@@ -23,5 +23,7 @@ alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
 
+![Subject Pronouns](https://raw.githubusercontent.com/NikosPolyc/Portfolio/main/Project_4/Exec_Dashboard.png)
+
 
 
