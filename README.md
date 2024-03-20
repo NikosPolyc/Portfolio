@@ -32,8 +32,9 @@
 - [License](#license)
 
 ## Project
-### Project_1
+### Project_1 !make it page --->SETTINGS--->PAGES
 ### [Data Analysis on Greek used car market.](https://pages.github.com/NikosPolyc/Portfolio/tree/main/Project_1/Portfolio_Project_1_LEASING_COMPANY_ANALYSIS.ipynb)
+### Tools: Python, Jupyter Notebook
 ### Project_2
 ### Project_3
 ### Project_4
