@@ -36,7 +36,7 @@
 ### [Tracking Attrition Trends](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4)
 ####  Tools: PowerBI
 ### Project_5 
-### [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb)
+### [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_5/marketing-project.ipynb)
 ####   Tools: Python,Jupyter Notebook, Machine Learning
 
 
