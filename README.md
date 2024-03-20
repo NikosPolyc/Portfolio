@@ -9,9 +9,12 @@
 ## Index
 
 - [About](#about)
-- [Usage](#usage)
-  - [Installation](#installation)
-  - [Commands](#commands)
+- [Projects](#usage)
+  - [Project 1](#Project 1)
+  - [Project 2](#Project 2)
+  - [Project 3](#Project 3)
+  - [Project 4](#Project 4)
+  - [Project 5](#Project 5)
 - [Development](#development)
   - [Pre-Requisites](#pre-requisites)
   - [Developmen Environment](#development-environment)
