@@ -30,11 +30,11 @@
 ### [Data analysis on a Store dataset.](https://github.com/NikosPolyc/Portfolio/tree/main/Project_2)
 ####   Tools: SQL, Excel
 ### Project_3
-#### [Predicting Model for Lung Cancer](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb)
+### [Predicting Model for Lung Cancer](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb)
 ####   Tools: Python,Jupyter Notebook, Machine Learning
 ### Project_4
 ### [Tracking Attrition Trends](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4)
-###  Tools: PowerBI
+####  Tools: PowerBI
 ### Project_5 
 ### [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb)
 ####   Tools: Python,Jupyter Notebook, Machine Learning
