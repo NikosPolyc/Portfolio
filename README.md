@@ -15,13 +15,13 @@
   - [Project 3](#Project_3)
   - [Project 4](#Project_4)
   - [Project 5](#Project_5)
-- [Development](#development)
+
 
 
 ## About
 #### Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects. Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
 
-## Project
+## Test_1 Project
 ### Project_1
 !make it page --->SETTINGS--->PAGES
 ### [Data Analysis on Greek used car market.](https://pages.github.com/NikosPolyc/Portfolio/tree/main/Project_1/Portfolio_Project_1_LEASING_COMPANY_ANALYSIS.ipynb)
@@ -39,6 +39,14 @@
 ### [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_5/marketing-project.ipynb)
 ####   Tools: Python,Jupyter Notebook, Machine Learning
 
+## Test_2 Project
+| Project | Description | Tools |
+|---------|-------------|-------|
+| Project_1 | [Data Analysis on Greek used car market.](https://pages.github.com/NikosPolyc/Portfolio/tree/main/Project_1/Portfolio_Project_1_LEASING_COMPANY_ANALYSIS.ipynb) | Python, Jupyter Notebook |
+| Project_2 | [Data analysis on a Store dataset.](https://github.com/NikosPolyc/Portfolio/tree/main/Project_2) | SQL, Excel |
+| Project_3 | [Predicting Model for Lung Cancer](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb) | Python, Jupyter Notebook, Machine Learning |
+| Project_4 | [Tracking Attrition Trends](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4) | PowerBI |
+| Project_5 | [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_5/marketing-project.ipynb) | Python, Jupyter Notebook, Machine Learning |
 
 
 
