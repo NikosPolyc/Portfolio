@@ -20,10 +20,14 @@
 ## Dashboard:
 ### Tailored with precision, this data analysis dashboard is designed to meet the unique needs of both the HR Department and executives. By leveraging parameters, it delivers insightful analytics to drive informed decision-making.
 ![alt text](Exec_Dashboard.png)
-### - Slicers: Gauge Job Satisfaction, Involvement, Environmental Satisfaction, and Work-Life Balance (RED).
+### - Slicers: Gauge Job Satisfaction, Involvement, Environmental Satisfaction, and Work-Life Balance (BLUE). 
 ### - Filters: Segment data by Department (GREEN).
-### - Department Button: Instantly trasfers user to a table based on selected departments' fields of study(BLUE).
+### - Department Button: Instantly trasfers user to a table based on selected departments' fields of study(RED).
 ![alt text](Exec_Dashboard_exp.png)
+
+## References
+### Dataset: IBM HR Analytics Employee Attrition & Performance
+### https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 
 
 
