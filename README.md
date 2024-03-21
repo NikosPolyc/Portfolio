@@ -5,19 +5,6 @@
 
 - As you navigate through this repository, I invite you to explore the breadth and depth of my skills as a data professional. Whether you're seeking innovative solutions, exploring potential collaborations, or simply intrigued by the power of data, I hope these projects will inspire and inform.
 
-
-## Index
-
-- [About](#about)
-- [Projects](#Project)
-  - [Project 1](#Project_1)
-  - [Project 2](#Project_2)
-  - [Project 3](#Project_3)
-  - [Project 4](#Project_4)
-  - [Project 5](#Project_5)
-
-
-
 ## About
 #### Please note that the projects showcased in this repository are not based on real-world data. Instead, they are meticulously crafted simulations intended to demonstrate my proficiency in data analysis and my understanding of specific subjects. Each project serves the purpose of showcasing my data skills and knowledge in various areas of data science, including data preprocessing, exploratory analysis, statistical modeling, and visualization techniques.
 
