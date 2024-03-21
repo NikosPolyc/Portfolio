@@ -27,7 +27,7 @@
 | Project_1 | [Data Analysis on Greek used car market.](https://pages.github.com/NikosPolyc/Portfolio/tree/main/Project_1/Portfolio_Project_1_LEASING_COMPANY_ANALYSIS.ipynb) | Python, Jupyter Notebook |
 | Project_2 | [Data analysis on a Store dataset.](https://github.com/NikosPolyc/Portfolio/blob/main/Project_2/README.md) | SQL, Excel |
 | Project_3 | [Predicting Model for Lung Cancer](https://github.com/NikosPolyc/Portfolio/blob/main/Project_3/lung-cancer.ipynb) | Python, Jupyter Notebook, Machine Learning |
-| Project_4 | [Tracking Attrition Trends](https://github.com/NikosPolyc/Portfolio/tree/main/Project_4) | PowerBI |
+| Project_4 | [Tracking Attrition Trends](https://github.com/NikosPolyc/Portfolio/blob/main/Project_4/README.md) | PowerBI |
 | Project_5 | [Forecasting Customer Behavior in Marketing: A Predictive Model](https://github.com/NikosPolyc/Portfolio/blob/main/Project_5/marketing-project.ipynb) | Python, Jupyter Notebook, Machine Learning |
 
 
